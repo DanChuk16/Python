@@ -1,0 +1,5 @@
+number1 = int(input('number1->'))
+number2 = int(input('number2->'))
+number3 = int(input('number2->'))
+print('sum = ', number1 + number2 + number3)
+print('product = ', number1 * number2 * number3)
