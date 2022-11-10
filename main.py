@@ -22,4 +22,4 @@ try:
         print(int(time_sec / 3600), ':', int((time_sec % 3600) / 60), ':', int((time_sec % 3600) % 60), 'to download the file')
         #print(f'{(time_sec / 3600)}:{((time_sec % 3600) / 60)}:{(time_sec % 3600) % 60} to download the file')
 except:
-    print('You typed something wrong!')
+    print('   !!!ERROR!!!   \nYou typed something wrong!')
