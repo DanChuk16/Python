@@ -19,6 +19,6 @@ try:
         hours1 = int(remainder / 3600)
         minutes2 = int((remainder % 3600) / 60)
         seconds3 = int((remainder % 3600) % 60)
-        print(f'until midnight left {hours1} hours, {minutes2} minutes, {seconds3} seconds')
+        print(f'until midnight left {hours1}:{minutes2}:{seconds3}')
 except:
     print('You entered something incorrectly')
