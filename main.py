@@ -16,4 +16,4 @@ try:
     else:
         print('You did not select a given option')
 except:
-    print('You did something wrong!')
+    print('   !!!ERROR!!!   \nYou did something wrong!')
