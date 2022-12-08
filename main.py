@@ -26,3 +26,4 @@ try:
 
 except Exception as ex:
     print(f'Error: {ex}')
+    print(f'Name: {ex.__class__.__name__}')
