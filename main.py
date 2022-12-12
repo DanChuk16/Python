@@ -21,6 +21,7 @@ try:
     print(f'Sum: {sum}')
     print(f'Max: {max}')
     print(f'Min: {min}')
+    print('Good bye!')
 
 except Exception as ex:
     print(ex)
