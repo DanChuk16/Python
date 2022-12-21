@@ -8,8 +8,7 @@ try:
         c = i % 10
         if a == b or a == c or b == c:
             counter += 1
-    print(f'Start: {start}\nEnd: {end}')
-    print(f'Integers that have two identical digits: {counter}')
+    print(f'Start: {start}\nEnd: {end}\nIntegers that have two identical digits: {counter}')
 
 except Exception as ex:
     print(f'Error: {ex}')
