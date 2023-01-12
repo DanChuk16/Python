@@ -1,8 +1,16 @@
-start = int(input('Start: '))
-end = int(input('End: '))
-counter = 0
-if start > end:
-    start, end = end, start
-for i in range(start, end + 1):
-    if i % 1 == 0 and i % i == 0: #and i % 2 != 0 and i % 3 != 0 and i % 5 != 0 and i % 7 != 0 and i % 9 != 0:
-        print(f'Prime numbers: {i}')
+try:
+    start = int(input('Start: '))
+    end = int(input('End: '))
+    if start > end:
+        start, end = end, start
+    for number in range(start, end + 1):
+        counter = 0
+        for i in range(1, number + 1):
+            if number % 1 == 0:
+                counter += 1
+        if counter == 2:
+            print('Prime numbers:', number, end=' ')
+    print()
+
+except Exception as ex:
+    print(f'Error: [{ex.__class__.__name__}]: {ex}')
