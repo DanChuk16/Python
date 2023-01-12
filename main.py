@@ -8,7 +8,7 @@ try:
         number += 1
         for i in range(start, end + 1):
             print(f'{i} * {number} = {number * i}', end='\t\t|\t')
-        print()#'\n.........................................................................................................................................................')
+        print()
 except Exception as ex:
     print(f'Error: {ex}')
     print(f'Name: {ex.__class__.__name__}')
