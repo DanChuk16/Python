@@ -7,7 +7,7 @@ try:
     while number != 10:
         number += 1
         for i in range(start, end + 1):
-            print(f'{i} * {number} = {number * i}', end='    ')
+            print(f'{i} * {number} = {number * i}', end='\t\t|\t')
         print()#'\n.........................................................................................................................................................')
 except Exception as ex:
     print(f'Error: {ex}')
