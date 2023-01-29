@@ -2,7 +2,8 @@ try:
     num = input('Numbers: ').split()
     Sum = 0
     for i in num:
-        Sum += i
+        if i.isnumeric():
+            Sum += i
     print(Sum)
 
 except Exception as ex:
