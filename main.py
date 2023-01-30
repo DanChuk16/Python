@@ -23,17 +23,29 @@ try:
         if j % 2 != 0:
             counter_3 += j
 
+    start_index = 0
+    end_index = 0
     for a in range(0, lengthOfFList):
         if a % 3 == 0:
             counter_4 *= numbers[a]
+    for e in range(0, lengthOfFList + 1):
+        if numbers[e] > 0:
+            start_index = e
+    for e in range(lengthOfFList, -1, -1):
+        if numbers[e] > 0:
+            end_index = e
+    partList_2 = numbers[numbers.index(start_index)+1: numbers.index(end_index)].copy()
+    Sum = 0
+    for it in partList_2:
+        Sum += it
+    print(Sum)
+    #print(start_index)
+    #print(end_index)
+
     partList = numbers[numbers.index(max(numbers))+1: numbers.index(min(numbers))].copy()
     mul = 1
     for item in partList:
         mul *= item
-    #partlist = numbers[numbers.index()]
-    #sum = 0
-    #for it in partlist:
-        #sum += it
 
     print(f'Sum negative numbers: {counter}')
     print(f'Sum even numbers: {counter_2}')
