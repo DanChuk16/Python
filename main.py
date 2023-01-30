@@ -5,12 +5,12 @@ try:
     for i in whirlpool:
         if '+' in i:
             index_plus = whirlpool.index('+')
-
-        elif '-' in whirlpool:
+            num_1 = whirlpool[whirlpool.index(min(whirlpool): index_plus)]
+        if '-' in whirlpool:
             index_minus = whirlpool.index('-')
-        elif '*' in whirlpool:
+        if '*' in whirlpool:
             index_mul = whirlpool.index('*')
-        elif '/' in whirlpool:
+        if '/' in whirlpool:
             index_divisi = whirlpool.index('/')
 
 except Exception as ex:
