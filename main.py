@@ -1,7 +1,15 @@
 try:
     text = input('Text: ')
     counter = 0
-    lineList =
+
+    lineList = text.split('.')
+    newText = ''
+    for val in lineList:
+        val = val.strip()
+        newText += val.capitalize()+'. '
+    newText = newText[:-2]
+    print(newText)
+
     for j in text:
         if j.isdigit():
             counter += 1
